@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Hero from "./componets/Hero";
+import About from "./componets/About";
+import Servis from "./componets/Servis";
+import Working from "./componets/Working";
+import Contect from "./componets/Contect";
+import Footer from "./componets/Footer";
+import Testimonials from "./componets/Testimonials";
+import Having from "./componets/Having";
+import "slick-carousel/slick/slick.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <About/>
+      <Servis/>
+      <Working/>
+      <Testimonials/>
+      <Having/>
+      <Footer/>
     </div>
   );
 }
